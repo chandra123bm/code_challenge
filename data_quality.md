@@ -1,5 +1,6 @@
 What is data quality ?
 
+
 In simple terms data quality can be defined as
 " The degree to which the data meets the requirements of the purpose it was built for "
 
@@ -22,12 +23,70 @@ This makes the data quality very subjecive in nature  and its meaning differs fo
 3. Retail - real time SOH
 
 
+What are the impacts of having bad data quality practices:
 
+1. data will be  deemed useless for business purposes 
+2. Impacts the trust in the data teams by stakeholders
+3. All the time and efforts an organization invests in capturing,storing and managing data assets will be wasted
+4. Can lead to customer dissatifaction
+5.Data teams spend more time debugging data issues than new feature developnent 
 
 How to measure data quality.?
+
+Before we start looking at how DQ is measure, lets understand how data asset  is set up at any given organization.
+
+At the lowest level of data hierarchy, it always starts with a single data value. for example in real estate - its a property address, 
+In a bank it is an account number.
+
+Next, various data values which are related are grouped together as an entity or a data record. 
+Multiple data records which are just many occurances of same type are grouped into a data set . 
+
+And then we group these datasets into something called a data store. Depending on how we manage this we can these as data warehoues, data lakes , lake houses, data martes etc
+
+<insert picture here>
+
  
  How do we say data that the data us fit for the need?
- There are key dimenion which help us to measure the quality of data in an organization.
+ There are key dimenions which help us to measure the quality of data in an organization.
+ 
+ There are two types of metrics - Inherent DQ dimentions
+ - structure of the data value, format and meaning
+ 1. Accuracy - 
+ how well the data values depict the correctness .
+ For example total sales in a day. To measure this we need to have a source we can compare to . This becomes complex if there are multiple sources of truth.
+ 
+ 2. Data Lineage : Having a valid source of data
+ e.g. Sourcing a phone number from customer than from a public directory
+ 
+ 3. Meaning/Sematics : Are the data values are represent their meaning.
+  Having a customer database with primary and mailing address. 
+  
+ 4. Data format: Whether the data values have the specified format
+ for example : Dates , yy/mm/dd or mm/dd/YYYY, or a 4 digit postcode
  
  
+ 
+2. Context level data quality metrics
+
+These evaluate the data at record revel, or data set level and focus on related data as well
+
+like relations between Accounts and Customers
+Business constomers must have ABNs and can not be blank 
+
+
+Completeness - the degree to which data is filled annd not left blank
+Like mandatory columns
+
+required / optional/ inpplicable
+
+Constistecy
+
+Data need to be same accross departments. 
+Like employee info in HR and Finance
+
+Currency - does data represent the most upto date version
+
+Timeliness - The time is takes to exttract the data is suitable for business needs
+
+Uniqueness - Not having duplicates
 
