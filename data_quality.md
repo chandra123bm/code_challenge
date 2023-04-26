@@ -90,3 +90,56 @@ Timeliness - The time is takes to exttract the data is suitable for business nee
 
 Uniqueness - Not having duplicates
 
+How to build a case for data quality initiative :
+
+
+
+To prove the importance of data quality we need to highlight how DQ problems increase business risks and impact effiecincy.
+This may involve analyzing and mapping the DQ issues to the business risks.
+
+For example a duplicate entry in the sales table can impact total sales metric
+An outdated stocks table can impact wrong fulfilment decisions in retail company
+
+A business uses its data as a fuel across all departments and functions. Not being able to trust the authenticity and accuracy of your data can be one of the biggest disasters in any data initiative
+
+We need to analyze , and present how fixing data issues can benefit these major pillars of any organization:
+business, 
+finance, 
+customer,
+competition,
+team and 
+technology 
+
+<speak one liners about all above >
+
+Designing a data quality framework for DQ management 
+
+Data quality framework is a systematic process that monitors the current state of data quality and ensures that it is maintained above defined thresholds.
+It is usually designed in. 
+Data quality framework is a systematic process that monitors the current state of data quality and ensures that it is maintained above defined thresholds.
+
+It is usually designed in a cyclic manner in order to continuously assess and errors are corrected .
+
+to begin with, the framework should include basic data integrity checks e.g. nullability , duplicates check etc and then more use case specific checks .
+
+
+A simple framework can have 4 stages:
+
+
+Assess ====> Design =====> Execute ====> Monitor
+
+
+Assessment:
+Where you define key DQ metrics 
+Peform data profiling and find how potential gaps in the data
+Define acceptable level of data quality.
+This assessment requires you to understand how the dataset is used ? it is for runnning the business processess or to be analysed for desicison making
+< sample data diagram>
+
+Design :
+ Decide the architecture of the framework
+ consider the factors like:
+ Scalability
+ Adaptability
+ Reusability
+
