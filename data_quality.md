@@ -177,3 +177,8 @@ Benefits :
 
 1. Curate any dataset by placing the data quality rules as configurations. Since we do not need to build code everytime we had a DQ rule, it shortens build phase and promotes iterative development 
 2. Even data analysts with SQL knowledge can configure the rules.This pushes the DQ responsibility to business domains rather than central data platform teams
+
+
+Solution Overview:
+
+
