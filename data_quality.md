@@ -138,8 +138,42 @@ This assessment requires you to understand how the dataset is used ? it is for r
 
 Design :
  Decide the architecture of the framework
+ Where are we placing the data validation checks .
+ 
  consider the factors like:
  Scalability
+ 
  Adaptability
+ 
  Reusability
+ 
+Where to place the DQ processes:
 
+A typical pipeline would look like this:
+
+Source data ----> ETL ------>> Target datset
+
+1. DQ at input 
+2. as a part of ETL processes before loading it to the datastore 
+
+ Execution :
+ Here we decide how execute DQ checks.
+ Factors to consider include:
+ 1. Frequecy of data checks
+ 2. Handling of errors
+ 3. Time to execute
+ 4. Thresholds 
+ 
+ Monitoring :
+ Here we see the results of executing data quality checks and observe anomalies.
+ 
+As I indicated before this framework is an interative process.not a one stop destination.
+It works as a continuus improvement model. 
+We are going to find few errors which will need to be fixed and new quality rules added with new feature work.
+
+Bulding a config driven DQ framework
+
+Benefits :
+
+1. Curate any dataset by placing the data quality rules as configurations. Since we do not need to build code everytime we had a DQ rule, it shortens build phase and promotes iterative development 
+2. Even data analysts with SQL knowledge can configure the rules.This pushes the DQ responsibility to business domains rather than central data platform teams
